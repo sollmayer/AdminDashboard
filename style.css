@@ -74,6 +74,7 @@ body {
     border-radius: 1rem;
     background-color: rgb(218, 218, 218);
 }
+
 .header div:nth-child(1) {
     justify-content: start;
     gap: 1rem;
@@ -115,4 +116,48 @@ body {
     width: 50px;
     height: 50px;
     vertical-align: middle;
+}
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: #e2e8f0;
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding: 1.8rem;
+    gap:2rem;
+    grid-auto-rows: 14rem;
+}
+
+.card {
+    /* border: 2px solid black; */
+    padding: 3rem 2.5rem;
+    border-radius: 0.8rem;
+    background-image:
+    linear-gradient(
+      to right, 
+      #f0b429,
+      #f0b429 2%,
+      #ffffff 2%,
+      #ffffff 100%,
+      #ffffff 100%
+    );
+    box-shadow: 1px 2px 4px 0px #bababa;
+}
+.card h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+.card img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+.card_icons {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    margin-top: 1.5rem;
 }
