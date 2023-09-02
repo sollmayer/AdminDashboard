@@ -120,7 +120,7 @@ body {
 }
 .content {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr auto;
     background-color: #e2e8f0;
     overflow: auto;
 }
@@ -133,6 +133,7 @@ body {
 }
 .side_content {
     padding: 1.8rem 1.8rem 1.8rem 0;
+    max-width: 18.5rem;
 }
 .announcements, .trending{
     padding: 2rem 1.6rem;
@@ -170,6 +171,7 @@ body {
       #ffffff 100%
     );
     box-shadow: 1px 2px 4px 0px #bababa;
+    position: relative;
 }
 .card h3, p {
     margin: 0;
@@ -188,12 +190,12 @@ body {
     display: flex;
     justify-content: end;
     gap: 2rem;
-    margin-top: 1.5rem;
+    /* margin-top: 2rem; */
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
 }
 
-/* .content h2 {
-    position: absolute;
-} */
 .trending {
     display: flex;
     flex-direction: column;
