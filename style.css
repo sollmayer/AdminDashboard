@@ -10,7 +10,7 @@ body {
     height: 100%;
     box-sizing: border-box;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    /* grid-template-rows: 1fr 5fr; */
 }
 
 .sidebar {
@@ -223,4 +223,18 @@ body {
 #announcement_title, #trending_title {
     font-weight: 500;
     font-size: 1.3rem;
+}
+
+.sidebar li, 
+.card_icons img, 
+.header button, 
+.trending .profile,
+#notifications,
+#search_icon {
+    cursor: pointer;
+}
+
+#greeting {
+    font-weight: 700;
+    margin-bottom: 0.2rem;
 }
